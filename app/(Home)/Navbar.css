@@ -30,4 +30,6 @@
 
   .Navbar{
     font-family: "Rubik Vinyl", serif;
+    z-index: 1;
+    position: fixed;
   }

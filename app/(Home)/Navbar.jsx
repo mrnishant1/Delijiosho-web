@@ -10,6 +10,7 @@ import Section2 from "./Section2.jsx";
 import Section3 from "./Section3.jsx";
 import Section4 from "./Section4.jsx";
 import Section5 from "./Section5.jsx";
+import FeedbackForm from "./feedback.jsx";
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -100,7 +101,7 @@ const Navbar = () => {
 
     <div className="overflow-x-hidden" >
       {/* Section2 */}
-      <div ref={section2} className="secondDiv relative w-full bg-gradient-to-br from-black to-gray-900 h-[100%] overflow-hidden ">
+      <div ref={section2} className="secondDiv z-[2] relative w-full bg-gradient-to-br from-black to-gray-900 h-[100%] overflow-hidden ">
         <div className="section2 h-[100vh] w-full flex flex-row relative">
           <Section2 />
         </div>
@@ -158,21 +159,7 @@ const Navbar = () => {
             {/* Newsletter & Feedback */}
             <div className="w-[30%] flex flex-col gap-6 pl-5">
               {/* Newsletter Section */}
-              <div>
-                <h1 className="text-xl text-[#ffaa4f] font-bold uppercase">Newsletter</h1>
-                <p>
-                  Be the first to receive updates on new products, recipes, special offers, and more!
-                </p>
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="w-[90%] mt-2 p-2 rounded-md shadow-inner text-black outline-none"
-                />
-                <button className="bg-[#ffaa4f] text-white px-4 py-2 rounded-md mt-2 hover:bg-[#e6993f]">
-                  Subscribe
-                </button>
-              </div>
-
+             
               {/* Business Contact */}
               <div>
                 <h1 className="text-xl text-[#ffaa4f] font-bold uppercase">Contact Us</h1>
@@ -182,19 +169,7 @@ const Navbar = () => {
               </div>
 
               {/* Feedback Section */}
-              <div>
-                <h1 className="text-xl text-[#ffaa4f] font-bold uppercase">Feedback</h1>
-                <p>We value your feedback! Share your thoughts about our products and services below:</p>
-                <textarea
-                  name="Feedback"
-                  id="feedback"
-                  placeholder="Write your feedback here..."
-                  className="w-[90%] h-[100px] p-2 rounded-md shadow-inner text-black outline-none"
-                ></textarea>
-                <button className="bg-[#ffaa4f] text-white px-4 py-2 rounded-md mt-2 hover:bg-[#e6993f]">
-                  Send
-                </button>
-              </div>
+              <FeedbackForm/>
             </div>
           </div>
                 </div>
