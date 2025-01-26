@@ -19,27 +19,29 @@ const Navbar = () => {
   const pastaImg = useRef();
   const pastaImg2 = useRef();
   const section2 = useRef();
-
-  // Pasta animation
-  useEffect(() => {
+  let mm = gsap.matchMedia();
+ // Pasta animation
+ useEffect(() => {
     gsap.to(pastaImg.current, {
-      right: "10%",
-      bottom: "10%",
-      height: "50%",
+      scale: 1.5,
       duration: 1,
-      rotate: "180",
+      rotate: "130deg",
       ease: "power1.out",
+      
     });
+  
+      gsap.to(pastaImg2.current, {
+        scale: 1.5,
+        rotate: "-40deg",
+        top: "30%",
+        left:'17%',
+        duration: 1,
+        ease: "power1.out",
+      });
 
-    gsap.to(pastaImg2.current, {
-      left: "10%",
-      top: "10%",
-      height: "60%",
-      duration: 1,
-      ease: "power1.out",
-    });
-  }, []);
 
+}, []);
+  
   // Section2 animation
   useEffect(() => {
     gsap.to(section2.current, {
@@ -58,46 +60,58 @@ const Navbar = () => {
 
   return (
 <div className="bg-gradient-to-br from-black to-gray-900">
-    <div className='mainDiv sticky top-0 w-full bg-gradient-to-br from-black to-gray-900 h-[100vh] flex justify-center items-center'>
-        {/* Background Macaroni images */}
-        <Image
-          ref={pastaImg}
-          src="/gp1.png"
-          alt="Pasta"
-          style={{ height: "0%", position: "absolute" }}
-          width={600}
-          height={100}
-        />
-        <Image
-          ref={pastaImg2}
-          src="/gp1.png"
-          alt="Pasta 2"
-          style={{ height: "0%", position: "absolute" }}
-          width={700}
-          height={100}
-        />
-        <Image
-          src="/pastapng.png"
-          alt="Pasta PNG"
-          style={{ height: "85%", position: "absolute", zIndex: 100 }}
-          width={400}
-          height={200}
-        />
-        <Image
-          src="/vermicilli.png"
-          alt="Vermicelli"
-          style={{ height: "67%", position: "absolute", zIndex: 99, left: "23%" }}
-          width={400}
-          height={200}
-        />
-        <Image
-          src="/macaronipack.png"
-          alt="Macaroni Pack"
-          style={{ height: "67%", position: "absolute", zIndex: 99, right: "23%" }}
-          width={400}
-          height={200}
-        />
-      </div>
+<div className="mainDiv sticky top-0 w-[100vw] bg-gradient-to-br from-black to-gray-900 h-[100vh]">
+  {/* Background Macaroni images */}
+  <div className="back-wrapper gp fixed z-[1] top-0 left-0 w-full flex justify-center items-center h-[100%] pointer-events-none">
+    <Image
+      ref={pastaImg}
+      src="/gp1.png"
+      alt="Pasta"
+      style={{right: "17%", bottom: "3%", rotate: "110deg"}}
+      className="absolute h-auto"
+      width={400}
+      height={100}
+    />
+    <Image
+      ref={pastaImg2}
+      src="/gp1.png"
+      alt="Pasta 2"
+      className="absolute h-auto"
+      style={{left: "20%", top: "20%", rotate: "-20deg"}}
+      width={400}
+      height={100}
+    />
+  </div>
+
+  {/* Pack Images */}
+  <div className="image-wrapper flex z-[100] w-[10%] top-0 justify-center items-center h-[100%]">
+    <Image
+      src="/pastapng.png"
+      alt="Pasta PNG"
+      className="absolute"
+      style={{ zIndex: 100 }}
+      width={400}
+      height={300}
+    />
+    <Image
+      src="/vermicilli.png"
+      alt="Vermicelli"
+      className="absolute"
+      style={{ zIndex: 99, left: "27%" }}
+      width={300}
+      height={200}
+    />
+    <Image
+      src="/macaronipack.png"
+      alt="Macaroni Pack"
+      className="absolute"
+      style={{ zIndex: 98, right: "27%" }}
+      width={300}
+      height={200}
+    />
+  </div>
+</div>
+
 
     <div className="overflow-x-hidden" >
       {/* Section2 */}

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import Image from 'next/image'
+import VideoContent from './video.js';
 
 export const Section4 = () => {
     useEffect(() => {
@@ -42,12 +42,12 @@ export const Section4 = () => {
     return (
         <div className="h-full w-full relative">
             {/* Video Container */}
-            <div className="videoContainer h-[100%] w-[100%] bg-red-400 p-[10%] relative">
-                <h1 className="text-white text-4xl font-bold">Promotion Video</h1>
+            <div className="videoContainer h-[70%] w-[100%] bg-red-400 relative">
+                <VideoContent/>
             </div>
 
             {/* ProductTalks Container */}
-            <div className="ProductTalks p-8 h-[75%] w-[30%] bg-[#ff8400] absolute bottom-[5%] right-[-30%] shadow-xl">
+            <div className="ProductTalks p-8 h-[75%] w-[30%] bg-[#ff8400] absolute bottom-[5%] right-[-30%] shadow-xl ">
                 <h1 className="text-4xl font-bold">Healthy!</h1>
                 <h1 className="text-2xl font-bold">&</h1>
                 <h1 className="text-4xl font-bold">Tasty!</h1>

@@ -29,7 +29,33 @@
   }
 
   .Navbar{
+    
     font-family: "Rubik Vinyl", serif;
-    z-index: 1;
+    
     position: fixed;
+  }
+  image{
+    max-width: 60%;
+  }
+
+
+  @media (min-width: 640px) {
+    .Navbar2{
+      opacity: 0;
+    }
+   
+    
+  }
+  .image-wrapper {
+    max-width: 80%; /* Control max size relative to viewport */
+    margin: 0 auto; /* Center the image horizontally */
+  }
+  .back-wrapper{
+    max-height: 80%;
+    margin: 0 auto;
+  }
+  
+  img{
+    max-width: 60%;
+    height: auto;
   }
