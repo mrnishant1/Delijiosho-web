@@ -54,8 +54,8 @@
     max-height: 80%;
     margin: 0 auto;
   }
-  
+  /* All image responsiveness */
   img{
-    max-width: 60%;
+    max-width: 70%;
     height: auto;
   }

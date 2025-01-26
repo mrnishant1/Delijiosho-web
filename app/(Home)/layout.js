@@ -29,10 +29,10 @@ const [order, setorder] = useState(true)
                     <a href="/" className="block hover:underline">
                     Home
                     </a>
-                    <a href="#" className="block hover:underline">
-                    About
+                    <a href="/products" className="block hover:underline">
+                    Products
                     </a>
-                    <a href="#" className="block hover:underline">
+                    <a href="/contact" className="block hover:underline">
                     Contact
                     </a>
                 </nav>

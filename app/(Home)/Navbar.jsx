@@ -45,7 +45,7 @@ const Navbar = () => {
   // Section2 animation
   useEffect(() => {
     gsap.to(section2.current, {
-      borderRadius: "100 100 0 0",
+      borderRadius: "50 50 0 0",
       boxShadow: "#d6a15c 0 -3px 16px",
       duration: 0.7,
       ease: "power1.out",
@@ -113,12 +113,10 @@ const Navbar = () => {
 </div>
 
 
-    <div className="overflow-x-hidden" >
+    <div className="" >
       {/* Section2 */}
       <div ref={section2} className="secondDiv z-[2] relative w-full bg-gradient-to-br from-black to-gray-900 h-[100%] overflow-hidden ">
-        <div className="section2 h-[100vh] w-full flex flex-row relative">
           <Section2 />
-        </div>
 
        {/* Section3 */}
       <div className="section3 relative h-[100vh] w-full flex flex-col items-center">

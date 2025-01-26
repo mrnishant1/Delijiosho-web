@@ -36,9 +36,9 @@ import Image from "next/image"
             }
         })
 
-        gsap.to('.macaroniBack',{
-            right:'-33%',
+        gsap.to('.orangeBack',{
             duration: '0.3',
+            left: '47%',
             ease: "power1.out",
             scrollTrigger:{
                 trigger: '.onlytext',
@@ -49,53 +49,58 @@ import Image from "next/image"
             }
         })
         //triplet promoPic animation remain to be done here
-          
+        // left: 42%;
+        // top: -53%;
+        // rotate: 169deg;
+        // scale: 1.7;
+      
           
         },[])
 
         return (
-            <>
-            {/* left text side */}
-            <div  className='textside flex flex-col gap-12'>
-                    {/*main Headings*/}
-                    <h1 className='onlytext relative pl-[4rem] pr-{4rem} pt-[4rem] flex flex-col gap-2 text-[80px] left-[-100%]'>
-                        <span className='md:text-6xl text-5xl '>Twist</span> 
-                        {/* <br /> */}
-                        <span className='md:text-6xl text-4xl '>Taste</span> 
-                        {/* <br /> */}
-                        <span className='md:text-6xl text-2xl text-[#ffe500] '>
-                            <span className=''>Your Delicious Heaven!</span>     
-                        </span>
-                    </h1>
-                    {/* short para */}
-                    <div className='onlytext relative text-[25px] pl-[4rem] left-[-100%]'>
-                        <span className='font-serif'>"Pure pasta perfection in every bite!</span> <br /> 
-                         <span className='text-yellow-200'>Delicious, wholesome, unforgettable!"</span> <br />
-                         <span className='font-serif '>Crafted with the finest ingredients, <br />
-                         our macaroni brings authentic flavors and irresistible taste to your plate.</span> 
-                    </div>
-                    <button className='onlytext ml-14 md:h-[7%] w-[23%] p-0 shopTopBtn relative left-[-100%] flex justify-center items-center md:top-[-10px] gap-2 bg-[#FFE500] text-black font-bold py-2 px-4 rounded-full hover:bg-yellow-600  z-50 font-serif'><strong>Get Now</strong></button>
-                   
-
-                </div>
-            <div className="macaroniBack absolute h-[120%] bg-[#ff8400] w-[70%] rotate-[45deg] right-[-100%] rounded-[40px] ] "> </div>
-
-                {/* Right side  */}
-                <div className='rightside absolute w-[45%] h-[90%] right-0'>
-                    <div className=' w-[100%] h-[100vh]'>
-                    <Image
-                        id="macaroniImg"
-                        src={"/macaroni.png"}
-                        loading="lazy"
-                        alt="Macaroni"
-                        width={700}
-                        height={100}
-                        className='absolute h-[80%] top-[0%] left-[100%] w-[100%] opacity-[1] rotate-[-10deg]'
-                    />
-                    </div>
-                </div> 
-                    
-            </>
+            <div className="section2 h-[100vh] w-full grid grid-cols-1 md:grid-cols-2 relative">            
+            {/* Left text side */}
+            <div className="textside flex flex-col gap-12 p-6 md:p-12">
+              {/* Main Headings */}
+              <h1 className="onlytext flex flex-col gap-2 text-[50px] md:text-[80px]">
+                <span className="text-4xl md:text-6xl">Twist</span> 
+                <span className="text-3xl md:text-6xl">Taste</span> 
+                <span className="text-3xl md:text-6xl text-[#ffe500]">
+                  Your Delicious Heaven!
+                </span>
+              </h1>
+          
+              {/* Short paragraph */}
+              <div className="onlytext max-w-[100%] text-[14px] md:text-[20px]">
+                <span className="font-serif">"Pure pasta perfection in every bite!</span><br /> 
+                <span className="text-yellow-200">Delicious, wholesome, unforgettable!"</span><br />
+                <span className="font-serif">
+                  Crafted with the finest ingredients,<br />
+                  our macaroni brings authentic flavors and irresistible taste to your plate.
+                </span>
+              </div>
+          
+              {/* Button */}
+              <button className="onlytext md:h-[7%] w-[50%] md:w-[30%] bg-[#FFE500] text-black font-bold py-2 px-4 rounded-full hover:bg-yellow-600 z-50">
+                <strong>Get Now</strong>
+              </button>
+            </div>
+          
+            {/* Right side */}
+            <div className="rightside relative flex justify-center items-center md:w-[100%] h-[90%]">
+              <Image
+                id="macaroniImg"
+                src={"/macaroni.png"}
+                loading="lazy"
+                alt="Macaroni"
+                width={700}
+                height={100}
+                className="h-auto w-[70%] md:w-[100%] rotate-[-10deg]"
+              />
+            </div>
+          </div>
+          
+            
         );
     }
     
