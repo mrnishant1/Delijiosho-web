@@ -10,7 +10,7 @@ import Section2 from "./Section2.jsx";
 import Section3 from "./Section3.jsx";
 import Section4 from "./Section4.jsx";
 import Section5 from "./Section5.jsx";
-import FeedbackForm from "./feedback.jsx";
+import FeedbackForm from "./section6.jsx";
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -140,51 +140,12 @@ const Navbar = () => {
                 </div>
 
         {/* Section5 */}
-                <div className="section5 relative h-[100vh] w-full flex flex-col justify-center items-center">
-                  <div className="w-[70%] mb-10 text-center">
-                    <Section5 />
-                  </div>
-
-                  <div className="flex w-full text-lg justify-between font-serif text-gray-300 items-start px-10">
-                    {/* Quick Links */}
-                    <div className="w-[30%] flex flex-col gap-4 pl-5">
-                  <h1 className="text-xl text-[#ffaa4f] font-bold uppercase">Quick Links</h1>
-              <Link href="/" className="hover:underline hover:text-[#ffaa4f]">Home</Link>
-              <Link href="/combo" className="hover:underline hover:text-[#ffaa4f]">Combo Offers</Link>
-              <Link href="/hygiene" className="hover:underline hover:text-[#ffaa4f]">Our Hygiene Standards</Link>
-              <Link href="/contact" className="hover:underline hover:text-[#ffaa4f]">Contact Us</Link>
-              <Link href="/privacy" className="hover:underline hover:text-[#ffaa4f]">Privacy Policy</Link>
-            </div>
-
-            {/* About Us */}
-            <div className="w-[40%] pr-5 text-justify">
-              <h1 className="text-xl text-[#ffaa4f] font-bold uppercase">About Us</h1>
-              <p>
-                At <strong>Delijiosho Foods</strong>, we are committed to delivering the finest quality
-                macaroni, pasta, and vermicelli to your table. With a focus on health and taste,
-                we prioritize natural ingredients, modern manufacturing processes, and strict hygiene
-                standards. From nutritious options to indulgent treats, our products are crafted to 
-                satisfy every palate while maintaining top-tier quality.
-              </p>
-            </div>
-
-            {/* Newsletter & Feedback */}
-            <div className="w-[30%] flex flex-col gap-6 pl-5">
-              {/* Newsletter Section */}
-             
-              {/* Business Contact */}
-              <div>
-                <h1 className="text-xl text-[#ffaa4f] font-bold uppercase">Contact Us</h1>
-                <p>
-                  Business Email: <a href="mailto:jogeshchahar@gmail.com" className="text-[#ffaa4f] underline">jogeshchahar@gmail.com</a>
-                </p>
-              </div>
-
-              {/* Feedback Section */}
-              <FeedbackForm/>
-            </div>
+          <div className="section5 relative h-[20vh] w-full flex flex-col justify-center items-center">
+            <div className="w-[70%] mb-10 text-center"><Section5 /></div>
           </div>
-                </div>
+        {/* section6*/}
+         <FeedbackForm/>
+          
       </div>
 
     </div>

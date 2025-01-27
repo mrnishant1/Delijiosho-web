@@ -11,11 +11,26 @@ SwiperCore.use([Autoplay]);
 const Section5 = () => {
     return (
         <>
-            <Swiper
+        <Swiper
+        breakpoints={{
+          // Breakpoint for screen width ≥ 400px
+        300: {
+            slidesPerView: 1,
+          },
+          // Breakpoint for screen width ≥ 768px
+          700: {
+            slidesPerView: 2,
+          },
+          // Breakpoint for screen width ≥ 1024px
+          1024: {
+            slidesPerView: 3,
+          },
+        }}
         spaceBetween={2} // Spacing between slides
         slidesPerView={3} // Auto fit slides
         loop={true} // Infinite loop
         speed={2000} // Animation speed
+        
         
         autoplay={{
           delay: 0, // No delay between transitions
@@ -25,27 +40,27 @@ const Section5 = () => {
         allowTouchMove={false} // Disable user dragging
       >
         <SwiperSlide style={{width: '25%'}}>
-          <div style={{ width: "200px", height: "200px", adding: '10px' }}>
+          <div style={{ width: "70%", height: "auto", adding: '10px' }}>
             <img src="/zepto.png" alt="" />
           </div>
         </SwiperSlide>
         <SwiperSlide style={{width: '25%'}}>
-          <div style={{ width: "200px", height: "200px", padding: '10px' }}>
+          <div style={{ width: "70%", height: "auto", padding: '10px' }}>
             <img src="/flipkart.png" alt="" />
           </div>
         </SwiperSlide>
         <SwiperSlide style={{width: '25%'}}>
-          <div style={{ width: "200px", height: "200px", padding: '10px' }}>
+          <div style={{ width: "70%", height: "auto", padding: '10px' }}>
             <img src="/amazonwhitelogo.png" alt="" />
           </div>
         </SwiperSlide >
         <SwiperSlide style={{width: '25%'}}>
-          <div style={{ width: "200px", height: "200px", padding: '10px' }}>
+          <div style={{ width: "70%", height: "auto", padding: '10px' }}>
             <img src="/blinkit.png" alt="" />
           </div>
         </SwiperSlide>
         <SwiperSlide style={{width: '25%'}}>
-          <div style={{ width: "200px", height: "200px", padding: '10px' }}>
+          <div style={{ width: "70%", height: "auto", padding: '10px' }}>
             <img src="/jiomart.png" alt="" />
           </div>
         </SwiperSlide>
