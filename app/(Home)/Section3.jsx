@@ -15,6 +15,20 @@ export default function Section3(){
   return (
     <>
     <Swiper
+     breakpoints={{
+      // Breakpoint for screen width ≥ 400px
+    300: {
+        slidesPerView: 1,
+      },
+      // Breakpoint for screen width ≥ 768px
+      700: {
+        slidesPerView: 2,
+      },
+      // Breakpoint for screen width ≥ 1024px
+      1024: {
+        slidesPerView: 3,
+      },
+    }}
       // install Swiper modules
       modules={[Navigation, Pagination]}
       spaceBetween={50}
@@ -42,13 +56,13 @@ export default function Section3(){
       
     >
       <SwiperSlide>
-        <div className='card flex bg-[#ff8000] h-[90%] w-[100%] p-4 shadow-[#1c1c1c] shadow-2xl rounded-tl-[60px] rounded-tr-[6px] rounded-bl-[6px] rounded-br-[60px]'>
-            <div className='flex flex-col gap-3 font-serif text-[13px]'>
+        <div className='card flex bg-[#ff8000] h-[100%] w-[100%] p-2 shadow-[#1c1c1c] shadow-2xl rounded-md '>
+            <div className='flex flex-col gap-1 font-serif text-[13px] pl-[13%] md:pl-[0%]'>
                 <h2 className="text-lg font-bold uppercase">Delijiosho Pasta</h2>
-                <p>
-                  Savor the perfect blend of taste and health with our premium <strong>Delijiosho Pasta</strong>. Made with the finest ingredients, it’s a guilt-free indulgence designed to bring joy to every bite. Perfect for your family meals, celebrations, or quick snacks!
+                <p className='max-w-[120%] z-10'>
+                  <strong>Delijiosho Pasta!</strong> Made with the finest ingredients, it’s a guilt-free indulgence designed to bring joy to every bite. Perfect for your family meals, celebrations, or quick snacks!
                 </p>
-                <div className="flex gap-3 items-center mt-2">
+                <div className="flex gap-1 items-center mt-2">
                   <span className="text-lg font-bold">₹120</span>
                   <button className="bg-white text-[#ff8000] px-4 py-1 rounded-md shadow-md hover:bg-[#ffb347] hover:text-white transition-all">
                   <Image src="/buycart.png" alt="Buy Now" className="h-6 inline" width={30} height={40} /> Buy Now
@@ -56,18 +70,18 @@ export default function Section3(){
               </div>
             </div>
 
-            <div className='w-[120%]'><Image src="/pastapng.png" alt="" className='h-[130%] w-[110%]'width={1000} height={1000}/></div>
+            <div className='w-[100%] hidden md:block'><Image src="/pastapng.png" alt="" className='relative top-[-22%] left-[-10%] z-0 h-[130%] max-w-[150%] w-[110%]'width={1000} height={1000}/></div>
         </div>
       </SwiperSlide>
 
       <SwiperSlide>
-        <div className='card flex bg-[#ff8000] h-[90%] w-[100%] p-4 shadow-[#1c1c1c] shadow-2xl rounded-tl-[60px] rounded-tr-[6px] rounded-bl-[6px] rounded-br-[60px]'>
-            <div className='flex flex-col gap-3 font-serif text-[13px]'>
+        <div className='card flex bg-[#ff8000] h-[100%] w-[100%] p-2 shadow-[#1c1c1c] shadow-2xl rounded-md '>
+            <div className='flex flex-col gap-1 font-serif text-[13px] pl-[13%] md:pl-[0%]'>
                 <h2 className="text-lg font-bold uppercase">Delijiosho Pasta</h2>
-                <p>
-                  Savor the perfect blend of taste and health with our premium <strong>Delijiosho Pasta</strong>. Made with the finest ingredients, it’s a guilt-free indulgence designed to bring joy to every bite. Perfect for your family meals, celebrations, or quick snacks!
+                <p className='max-w-[120%] z-10'>
+                  <strong>Delijiosho Pasta!</strong> Made with the finest ingredients, it’s a guilt-free indulgence designed to bring joy to every bite. Perfect for your family meals, celebrations, or quick snacks!
                 </p>
-                <div className="flex gap-3 items-center mt-2">
+                <div className="flex gap-1 items-center mt-2">
                   <span className="text-lg font-bold">₹120</span>
                   <button className="bg-white text-[#ff8000] px-4 py-1 rounded-md shadow-md hover:bg-[#ffb347] hover:text-white transition-all">
                   <Image src="/buycart.png" alt="Buy Now" className="h-6 inline" width={30} height={40} /> Buy Now
@@ -75,18 +89,18 @@ export default function Section3(){
               </div>
             </div>
 
-            <div className='w-[120%]'><Image src="/pastapng.png" alt="" className='h-[130%] w-[110%]'width={1000} height={1000}/></div>
+            <div className='w-[100%] hidden md:block'><Image src="/pastapng.png" alt="" className='relative top-[-22%] left-[-10%] z-0 h-[130%] max-w-[150%] w-[110%]'width={1000} height={1000}/></div>
         </div>
       </SwiperSlide>
 
       <SwiperSlide>
-        <div className='card flex bg-[#ff8000] h-[90%] w-[100%] p-4 shadow-[#1c1c1c] shadow-2xl rounded-tl-[60px] rounded-tr-[6px] rounded-bl-[6px] rounded-br-[60px]'>
-            <div className='flex flex-col gap-3 font-serif text-[13px]'>
+        <div className='card flex bg-[#ff8000] h-[100%] w-[100%] p-2 shadow-[#1c1c1c] shadow-2xl rounded-md '>
+            <div className='flex flex-col gap-1 font-serif text-[13px] pl-[13%] md:pl-[0%]'>
                 <h2 className="text-lg font-bold uppercase">Delijiosho Pasta</h2>
-                <p>
-                  Savor the perfect blend of taste and health with our premium <strong>Delijiosho Pasta</strong>. Made with the finest ingredients, it’s a guilt-free indulgence designed to bring joy to every bite. Perfect for your family meals, celebrations, or quick snacks!
+                <p className='max-w-[120%] z-10'>
+                  <strong>Delijiosho Pasta!</strong> Made with the finest ingredients, it’s a guilt-free indulgence designed to bring joy to every bite. Perfect for your family meals, celebrations, or quick snacks!
                 </p>
-                <div className="flex gap-3 items-center mt-2">
+                <div className="flex gap-1 items-center mt-2">
                   <span className="text-lg font-bold">₹120</span>
                   <button className="bg-white text-[#ff8000] px-4 py-1 rounded-md shadow-md hover:bg-[#ffb347] hover:text-white transition-all">
                   <Image src="/buycart.png" alt="Buy Now" className="h-6 inline" width={30} height={40} /> Buy Now
@@ -94,18 +108,18 @@ export default function Section3(){
               </div>
             </div>
 
-            <div className='w-[120%]'><Image src="/pastapng.png" alt="" className='h-[130%] w-[110%]'width={1000} height={1000}/></div>
+            <div className='w-[100%] hidden md:block'><Image src="/pastapng.png" alt="" className='relative top-[-22%] left-[-10%] z-0 h-[130%] max-w-[150%] w-[110%]'width={1000} height={1000}/></div>
         </div>
       </SwiperSlide>
-
+      
       <SwiperSlide>
-        <div className='card flex bg-[#ff8000] h-[90%] w-[100%] p-4 shadow-[#1c1c1c] shadow-2xl rounded-tl-[60px] rounded-tr-[6px] rounded-bl-[6px] rounded-br-[60px]'>
-            <div className='flex flex-col gap-3 font-serif text-[13px]'>
+        <div className='card flex bg-[#ff8000] h-[100%] w-[100%] p-2 shadow-[#1c1c1c] shadow-2xl rounded-md '>
+            <div className='flex flex-col gap-1 font-serif text-[13px] pl-[13%] md:pl-[0%]'>
                 <h2 className="text-lg font-bold uppercase">Delijiosho Pasta</h2>
-                <p>
-                  Savor the perfect blend of taste and health with our premium <strong>Delijiosho Pasta</strong>. Made with the finest ingredients, it’s a guilt-free indulgence designed to bring joy to every bite. Perfect for your family meals, celebrations, or quick snacks!
+                <p className='max-w-[120%] z-10'>
+                  <strong>Delijiosho Pasta!</strong> Made with the finest ingredients, it’s a guilt-free indulgence designed to bring joy to every bite. Perfect for your family meals, celebrations, or quick snacks!
                 </p>
-                <div className="flex gap-3 items-center mt-2">
+                <div className="flex gap-1 items-center mt-2">
                   <span className="text-lg font-bold">₹120</span>
                   <button className="bg-white text-[#ff8000] px-4 py-1 rounded-md shadow-md hover:bg-[#ffb347] hover:text-white transition-all">
                   <Image src="/buycart.png" alt="Buy Now" className="h-6 inline" width={30} height={40} /> Buy Now
@@ -113,9 +127,10 @@ export default function Section3(){
               </div>
             </div>
 
-            <div className='w-[120%]'><Image src="/pastapng.png" alt="" className='h-[130%] w-[110%]'width={1000} height={1000}/></div>
+            <div className='w-[100%] hidden md:block'><Image src="/pastapng.png" alt="" className='relative top-[-22%] left-[-10%] z-0 h-[130%] max-w-[150%] w-[110%]'width={1000} height={1000}/></div>
         </div>
       </SwiperSlide>
+
 
     </Swiper>
     </>

@@ -121,14 +121,14 @@ const Navbar = () => {
        {/* Section3 */}
       <div className="section3 relative h-[100vh] w-full flex flex-col items-center">
           <>
-          <div className="text-5xl px-16 font-bold text-purple-700 pt-10">
+          <div className="text-4xl max-w-[70%] sm:text-5xl font-bold text-purple-700 pt-10">
             Our Products
           </div>
-          <div className="text-[25px] self-center text-[white] font-semibold">
+          <div className="text-[20px] max-w-[70%] sm:text-[25px] self-center text-[white] font-serif">
             Delivering unmatched taste and texture in every bite
           </div>
           {/* Horizontal scroll */}
-          <div className="scroll-container h-[50%] w-[80%] relative top-[20%] flex gap-3">
+          <div className="scroll-container h-[30%] w-[80%] relative top-[20%] flex gap-3">
             <Section3 />
           </div>
           </>
